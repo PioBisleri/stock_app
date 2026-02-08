@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-dark-text font-sans antialiased overflow-x-hidden;
+    background-image:
+      radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.08) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(45, 212, 191, 0.08) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-soft-lg;
+  }
+
+  .glass-card {
+    @apply bg-dark-card/60 backdrop-blur-md border border-white/10 rounded-bento shadow-soft hover:shadow-soft-lg transition-all duration-300;
+  }
+
+  .bento-card {
+    @apply bg-dark-card/50 backdrop-blur-sm border border-white/10 rounded-bento shadow-soft;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-400 to-accent-teal;
+  }
+}
