@@ -47,15 +47,15 @@ Follow these steps to get the project up and running on your local machine.
 - **Python**: v3.10+
 
 ### 1. Clone the Repository
-\`\`\`bash
+```bash
 git clone https://github.com/PioBisleri/stock_app.git
 cd stock_app
-\`\`\`
+```
 
 ### 2. Backend Setup
 Navigate to the backend directory and set up the Python environment.
 
-\`\`\`bash
+```bash
 cd backend
 python -m venv venv
 
@@ -67,17 +67,17 @@ source venv/bin/activate
 
 # Install Dependencies
 pip install -r requirements.txt
-\`\`\`
+```
 
 Create a `.env` file in the `backend` directory (if required) for your API keys (e.g., Alpha Vantage).
 
 ### 3. Frontend Setup
 Navigate to the frontend directory and install dependencies.
 
-\`\`\`bash
+```bash
 cd ../frontend
 npm install
-\`\`\`
+```
 
 ---
 
@@ -85,9 +85,9 @@ npm install
 
 After setting up the prerequisites, you can run the entire application with a single command:
 
-\`\`\`bash
+```bash
 ./run.sh
-\`\`\`
+```
 
 This script will:
 1. Activate the backend virtual environment (or create it if missing).
@@ -101,18 +101,18 @@ This script will:
 ### Start the Backend
 From the `backend` directory (with venv activated):
 
-\`\`\`bash
+```bash
 uvicorn main:app --reload
-\`\`\`
+````
 The API will be available at `http://localhost:8000`.
 API Docs: `http://localhost:8000/docs`
 
 ### Start the Frontend
 From the `frontend` directory:
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 The application will be running at `http://localhost:5173`.
 
 ---
@@ -123,4 +123,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Made with ❤️ by the Stock Manager Team
+Made with ❤️ by the PioBisleri
